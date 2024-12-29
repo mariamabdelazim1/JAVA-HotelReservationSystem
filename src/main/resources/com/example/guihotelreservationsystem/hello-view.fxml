@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="743.0" prefWidth="887.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guihotelreservationsystem.HelloController">
+    <children>
+        <!-- Background Image -->
+        <ImageView fitHeight="281.0" fitWidth="895.0" layoutX="-2.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="false">
+            <image>
+                <Image url="@background.jpg" />
+            </image>
+        </ImageView>
+
+        <Label layoutX="280.0" prefHeight="62.0" prefWidth="406.0" text="Luxury Hotel">
+            <font>
+                <Font name="Constantia Bold Italic" size="57.0" />
+            </font>
+        </Label>
+
+        <!-- Buttons -->
+        <Button fx:id="OldCustomerButton" layoutX="649.0" layoutY="689.0" mnemonicParsing="false" onAction="#OpenCustomerForm" prefHeight="40.0" prefWidth="204.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-size: 14;">
+            <text>Old Customer</text>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </Button>
+        <ImageView fitHeight="227.0" fitWidth="302.0" layoutX="38.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@photo1.jpeg" />
+            </image>
+        </ImageView>
+
+        <Button fx:id="newCustomerButton" layoutX="14.0" layoutY="695.0" mnemonicParsing="false" onAction="#OpenNewCustomerForm" prefHeight="40.0" prefWidth="204.0" style="-fx-text-fill: white; -fx-background-color: black; -fx-font-size: 14;">
+            <text>New Customer</text>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </Button>
+        <ImageView fitHeight="207.0" fitWidth="311.0" layoutX="183.0" layoutY="466.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@photo2.jpeg" />
+            </image>
+        </ImageView>
+        <Label layoutX="209.0" layoutY="67.0" prefHeight="25.0" prefWidth="581.0" text="Where Comfort Meets Elegance – Your Perfect Stay Awaits!">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label contentDisplay="CENTER" layoutX="605.0" layoutY="306.0" prefHeight="40.0" prefWidth="277.0" text="FACILITIES" underline="true">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Label>
+        <Label layoutX="573.0" layoutY="431.0" text="Wi-Fi" />
+        <Label layoutX="712.0" layoutY="431.0" text="Air coditioning" />
+        <Label layoutX="560.0" layoutY="566.0" text="Room Service" />
+        <Label layoutX="751.0" layoutY="575.0" text="massage" />
+        <ImageView fitHeight="87.0" fitWidth="46.0" layoutX="564.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@wifi.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="62.0" fitWidth="95.0" layoutX="720.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@air_con.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="75.0" fitWidth="111.0" layoutX="536.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@roomService.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="62.0" fitWidth="100.0" layoutX="743.0" layoutY="500.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@massage.jpg" />
+            </image>
+        </ImageView>
+    </children>
+</Pane>

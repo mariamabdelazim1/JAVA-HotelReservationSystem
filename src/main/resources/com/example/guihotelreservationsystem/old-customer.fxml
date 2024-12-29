@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<!--<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guifxhotelreservationsystem.OldCustomerController">-->
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guihotelreservationsystem.OldCustomerController">
+    <children>
+        <ImageView fitHeight="610.0" fitWidth="514.0" layoutY="1.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@VILLADUBAI.jpeg" />
+            </image>
+        </ImageView>
+        <Pane layoutX="29.0" layoutY="111.0" opacity="0.8" prefHeight="391.0" prefWidth="430.0" style="-fx-background-color: white;">
+            <children>
+                <Label alignment="CENTER" layoutX="51.0" layoutY="14.0" prefHeight="25.0" prefWidth="348.0" text="Welcome Back !" textAlignment="CENTER">
+                    <font>
+                        <Font name="Consolas" size="40.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="-23.0" layoutY="170.0" prefHeight="25.0" prefWidth="190.0" text="Password:">
+                    <font>
+                        <Font name="Constantia" size="21.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="-42.0" layoutY="87.0" prefHeight="25.0" prefWidth="158.0" text="ID:">
+                    <font>
+                        <Font name="Constantia" size="21.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="passwordTextField" layoutX="150.0" layoutY="170.0" prefHeight="25.0" prefWidth="150.0" />
+
+                <Button fx:id="CancelAReservation" layoutX="247.0" layoutY="256.0" mnemonicParsing="false" onAction="#CancelReservation" prefHeight="31.0" prefWidth="158.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-size: 14;" textFill="WHITE">
+                    <font>
+                        <Font name="System" size="14.0" />
+                    </font>
+                    <text>Cancel A Reservation</text>
+                </Button>
+
+                <!-- Buttons -->
+                <Button layoutX="29.0" layoutY="256.0" mnemonicParsing="false" onAction="#newReservation" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-size: 14;" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                    <text>Make a New Reservation</text>
+                </Button>
+                <Button fx:id="checkCustomerIdButton" layoutX="326.0" layoutY="170.0" mnemonicParsing="false" onAction="#checkCustomerId" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: black;" text="Enter" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="customerIdTextField" layoutX="150.0" layoutY="87.0" prefHeight="25.0" prefWidth="150.0" />
+            </children>
+        </Pane>
+    </children>
+</Pane>

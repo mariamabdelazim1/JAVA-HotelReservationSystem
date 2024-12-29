@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guihotelreservationsystem.invoiceController">
+    <children>
+        <ImageView fitHeight="866.0" fitWidth="626.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@invoice.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutX="58.0" layoutY="66.0" prefHeight="722.0" prefWidth="511.0" style="-fx-background-color: white; -fx-opacity: 0.7;">
+            <children>
+                <Label contentDisplay="CENTER" layoutX="39.0" layoutY="14.0" prefHeight="54.0" prefWidth="236.0" text="See you soon ,">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Label layoutX="22.0" layoutY="197.0" text="Guest Name:">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="21.0" layoutY="231.0" prefHeight="30.0" prefWidth="81.0" text="Rooms: ">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="21.0" layoutY="157.0" prefHeight="30.0" prefWidth="166.0" text="ReservationID: ">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Line endX="374.0" endY="15.6168212890625" layoutX="101.0" layoutY="333.0" startX="-77.0" startY="15.6168212890625" />
+                <Label layoutX="22.0" layoutY="371.0" prefHeight="30.0" prefWidth="225.0" text="Total">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="24.0" layoutY="437.0" text="Taxes:">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="24.0" layoutY="77.0" text="Your Reservation for ">
+                    <font>
+                        <Font name="System Bold" size="21.0" />
+                    </font>
+                </Label>
+                <Label layoutX="21.0" layoutY="273.0" prefHeight="30.0" prefWidth="180.0" text="Number of nights:">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Line endX="318.0" layoutX="137.0" layoutY="493.0" startX="-100.0" />
+                <Label layoutX="24.0" layoutY="549.0" prefHeight="30.0" prefWidth="129.0" text="Final Price">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="343.0" layoutY="371.0" text="\$">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="342.0" layoutY="444.0" text="\$">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="338.0" layoutY="549.0" text="\$">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="reservationIdLabel" layoutX="343.0" layoutY="157.0" prefHeight="30.0" prefWidth="100.0" text="Label">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="guestNameLabel" layoutX="344.0" layoutY="197.0" prefHeight="30.0" prefWidth="225.0" text="Label">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="numberOfRoomsLabel" layoutX="343.0" layoutY="231.0" prefHeight="30.0" prefWidth="100.0" text="Label">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="numberOfNightsLabel" layoutX="343.0" layoutY="273.0" prefHeight="30.0" prefWidth="100.0" text="Label">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="roomRateLabel" layoutX="365.0" layoutY="371.0" prefHeight="30.0" prefWidth="100.0" text="Label">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="taxesLabel" layoutX="365.0" layoutY="444.0" prefHeight="30.0" prefWidth="100.0" text="Label">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="totalPriceLabel" layoutX="365.0" layoutY="549.0" prefHeight="30.0" prefWidth="100.0" text="Label">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            <Label fx:id="invoiceIdLabel" layoutX="344.0" layoutY="122.0" prefHeight="17.0" prefWidth="59.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="120.0" text="Invoice ID">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="Check_inLabel" layoutX="343.0" layoutY="79.0" prefHeight="21.0" prefWidth="180.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="guestFnameLabel" layoutX="243.0" layoutY="15.0" prefHeight="53.0" prefWidth="204.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="442.0" layoutY="15.0" prefHeight="20.0" prefWidth="28.0" text="!">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+    </children>
+</Pane>

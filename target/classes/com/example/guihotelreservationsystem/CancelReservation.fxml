@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="500.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guihotelreservationsystem.CancelReservationController">
+    <children>
+        <ImageView fitHeight="506.0" fitWidth="344.0" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img1.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutX="31.0" layoutY="14.0" opacity="0.7" prefHeight="417.0" prefWidth="268.0" style="-fx-background-color: white;">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="6.0" prefHeight="31.0" prefWidth="241.0" style="-fx-wrap-text: true;" text="Cancel Reservation" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bodoni MT Bold" size="21.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="59.0" prefHeight="66.0" prefWidth="268.0" style="-fx-wrap-text: true;" text="Please Specify the reason of Cancelling the Reservation:" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <TextField layoutX="10.0" layoutY="125.0" prefHeight="85.0" prefWidth="248.0" style="-fx-background-color: rgb(196, 204, 183); -fx-border-color: black;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <Label layoutX="80.0" layoutY="251.0" text="Reservation ID:">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="reservationTextField" layoutX="12.0" layoutY="292.0" onAction="#textFieldInput" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: rgb(196, 204, 183); -fx-border-color: BLACK;" />
+                <Button fx:id="cancelButton" layoutX="39.0" layoutY="372.0" mnemonicParsing="false" onAction="#cancelReservation" prefHeight="31.0" prefWidth="194.0" style="-fx-background-color: black;" text="Confirm Cancellation" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Button fx:id="returnButton" layoutX="14.0" layoutY="449.0" mnemonicParsing="false" onAction="#handleReturnButton" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: black;" text="&lt;Return" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+    </children>
+</Pane>
